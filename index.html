@@ -1,82 +1,280 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>纽约洗炉头 | NYC Hood Cleaning | 餐馆油烟罩清洁</title>
-  <meta name="description" content="纽约专业餐馆洗炉头、油烟罩清洁、油网清洗、厨房排烟系统清洁服务。服务纽约五大区 康州 NJ 华人餐馆、外卖店、商用厨房。">
-  <meta name="keywords" content="纽约洗炉头, NYC hood cleaning, restaurant hood cleaning NYC, kitchen exhaust cleaning, 餐馆油烟罩清洁, 纽约餐馆清洁">
+
+  <meta name="description"
+    content="纽约专业餐馆洗炉头、油烟罩清洁、油网清洗、厨房排烟系统清洁服务。服务纽约五大区、康州、新泽西州华人餐馆、外卖店、商用厨房。">
+
+  <meta name="keywords"
+    content="纽约洗炉头, NYC hood cleaning, restaurant hood cleaning NYC, kitchen exhaust cleaning, 餐馆油烟罩清洁">
+
   <meta name="author" content="NY Hood Cleaning">
+
   <link rel="canonical" href="https://nyhoodcleaning.github.io/">
 
   <style>
-    body { margin:0; font-family: Arial, "Microsoft YaHei", sans-serif; color:#222; line-height:1.6; }
-    header { display:flex; justify-content:space-between; align-items:center; padding:18px 8%; background:#111; color:white; position:sticky; top:0; z-index:1000; }
-    .logo { font-size:24px; font-weight:bold; }
-    nav a { color:white; margin-left:28px; text-decoration:none; font-size:16px; }
-    nav a:hover { color:#f6c343; }
-    .hero { padding:90px 8%; background:#f4f4f4; }
-    .hero h1 { font-size:42px; margin-bottom:15px; }
-    .hero p { font-size:20px; max-width:850px; }
-    .btn { display:inline-block; margin-top:25px; padding:14px 24px; background:#f6c343; color:#111; text-decoration:none; font-weight:bold; border-radius:6px; }
-    section { padding:60px 8%; }
-    section h2 { font-size:30px; margin-bottom:20px; }
-    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
-    .card { padding:25px; background:#fafafa; border:1px solid #ddd; border-radius:12px; }
-    footer { background:#111; color:white; text-align:center; padding:25px; }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:Arial,"Microsoft YaHei",sans-serif;
+      background:#0b0b0b;
+      color:#f5f5f5;
+      line-height:1.7;
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:18px 8%;
+      background:#000;
+      border-bottom:2px solid #c8a045;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    .logo img{
+      height:70px;
+      width:auto;
+      display:block;
+    }
+
+    nav a{
+      color:#f5d27a;
+      text-decoration:none;
+      margin-left:28px;
+      font-size:16px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:white;
+    }
+
+    .hero{
+      padding:100px 8%;
+      background:
+      linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+      url('https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+    }
+
+    .hero h1{
+      font-size:54px;
+      color:#f5d27a;
+      margin-bottom:20px;
+      max-width:700px;
+      line-height:1.2;
+    }
+
+    .hero p{
+      font-size:20px;
+      max-width:900px;
+      color:#ddd;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:35px;
+      padding:15px 30px;
+      background:#c8a045;
+      color:#000;
+      text-decoration:none;
+      font-weight:bold;
+      border-radius:6px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#f5d27a;
+    }
+
+    section{
+      padding:80px 8%;
+    }
+
+    section h2{
+      font-size:38px;
+      color:#f5d27a;
+      margin-bottom:25px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+      margin-top:30px;
+    }
+
+    .card{
+      background:#151515;
+      border:1px solid #333;
+      padding:35px;
+      border-radius:12px;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      border-color:#c8a045;
+      transform:translateY(-5px);
+    }
+
+    footer{
+      background:#000;
+      border-top:2px solid #c8a045;
+      text-align:center;
+      padding:35px;
+      color:#aaa;
+    }
+
+    @media(max-width:768px){
+
+      header{
+        flex-direction:column;
+      }
+
+      nav{
+        margin-top:15px;
+      }
+
+      nav a{
+        margin:0 10px;
+        font-size:14px;
+      }
+
+      .hero h1{
+        font-size:36px;
+      }
+
+      .hero p{
+        font-size:17px;
+      }
+
+    }
+
   </style>
 </head>
 
 <body>
+
   <header>
-    <div class="logo">NY Hood Cleaning</div>
+
+    <div class="logo">
+      <img src="hoodcleaning.png" alt="NY Hood Cleaning Logo">
+    </div>
+
     <nav>
       <a href="#about">公司介绍</a>
       <a href="#service">服务范围</a>
       <a href="#partners">合作伙伴</a>
       <a href="#news">新消息</a>
     </nav>
+
   </header>
 
   <main>
+
     <section class="hero">
-      <h1>纽约专业餐馆洗炉头服务</h1>
-      <p>我们专注于为餐馆、面包店 以及任何商业厨房及食品行业客户提供专业商用厨房排烟系统清洁服务，包括炉头清洗、油烟罩清洁、排风管道除油、蘑菇头与蜗牛风机深度清洗，
-        以及抽风设备维护保养。凭借高效、安全、彻底的清洁流程，我们帮助客户减少油污堆积、降低火灾隐患、提升厨房卫生环境，并更轻松应对各类卫生与安全检查。
-        服务范围覆盖纽约州、新泽西州、康涅狄格州、宾夕法尼亚州、马里兰州、马萨诸塞州及罗德岛，为各类餐馆和商业厨房提供可靠的长期清洁解决方案。
-        商用厨房排油烟设施清洗与维护本身也是行业规范中的重点内容</p>
-      <a class="btn" href="tel:你的电话">立即预约清洗</a>
+
+      <h1>纽约专业商用厨房排烟系统清洁服务</h1>
+
+      <p>
+        我们专注于为餐馆、面包店以及商业厨房提供专业炉头清洗、
+        油烟罩清洁、排风管道除油、蘑菇头与蜗牛风机深度清洗、
+        以及抽风设备维护服务。
+        帮助客户降低火灾隐患、减少油污堆积、
+        提升厨房卫生环境，并轻松应对卫生与安全检查。
+      </p>
+
+      <a class="btn" href="tel:6462016351">
+        立即预约清洗
+      </a>
+
     </section>
 
     <section id="about">
+
       <h2>公司介绍</h2>
-      <p>NY Hood Cleaning 专注服务纽约华人餐馆、外卖店、奶茶店、商业厨房和食品相关企业。</p>
+
+      <p>
+        NY Hood Cleaning 专注服务纽约华人餐馆、
+        外卖店、奶茶店、商业厨房及食品行业客户，
+        提供高效、安全、专业的商用厨房清洁解决方案。
+      </p>
+
     </section>
 
     <section id="service">
+
       <h2>服务范围</h2>
+
       <div class="cards">
-        <div class="card">餐馆炉头清洗</div>
-        <div class="card">油烟罩清洁</div>
-        
-        <div class="card">厨房排烟系统清洁</div>
+
+        <div class="card">
+          餐馆炉头清洗
+        </div>
+
+        <div class="card">
+          油烟罩清洁
+        </div>
+
+        <div class="card">
+          排风管道除油
+        </div>
+
+        <div class="card">
+          商用厨房排烟系统清洁
+        </div>
+
       </div>
+
     </section>
 
     <section id="partners">
+
       <h2>合作伙伴</h2>
-      <p>我们长期服务纽约餐馆、物业管理公司、商业厨房和食品行业客户。</p>
+
+      <p>
+        我们长期服务纽约州、新泽西州、康州、
+        宾夕法尼亚州等地区餐馆、物业管理公司、
+        商业厨房和食品行业客户。
+      </p>
+
     </section>
 
     <section id="news">
+
       <h2>新消息</h2>
-      <p>这里会发布餐馆厨房清洁案例、FDNY 检查提醒、油烟罩保养知识和厨房安全资讯。</p>
+
+      <p>
+        这里会持续更新餐馆清洁案例、
+        FDNY 检查提醒、
+        商用厨房维护知识与行业资讯。
+      </p>
+
     </section>
+
   </main>
 
   <footer>
-    电话：646-2016351 ｜  服务区域：纽约五大区 康州 新泽西州
+
+    电话：646-201-6351<br>
+    服务区域：纽约五大区 ｜ 康州 ｜ 新泽西州 ｜ 宾州
+
   </footer>
+
 </body>
+
 </html>
