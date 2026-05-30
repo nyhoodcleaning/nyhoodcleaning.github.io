@@ -122,6 +122,47 @@
     }
     
 
+.partner-slider{
+  overflow:hidden;
+  width:100%;
+  margin-top:40px;
+  padding:20px 0;
+}
+
+.partner-track{
+  display:flex;
+  width:max-content;
+  animation:scroll 30s linear infinite;
+}
+
+.partner-track img{
+  width:220px;
+  height:150px;
+  object-fit:cover;
+  margin-right:25px;
+  border-radius:10px;
+  border:1px solid #ddd;
+  box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.partner-track:hover{
+  animation-play-state:paused;
+}
+
+@keyframes scroll{
+  0%{
+    transform:translateX(0);
+  }
+  100%{
+    transform:translateX(-50%);
+  }
+}
+
+
+
+
+
+    
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -264,10 +305,32 @@
     </section>
 
     <section id="partners">
-      <h2>合作伙伴</h2>
-      <p>
-        我们长期服务
-      </p>
+
+<div class="partner-slider">
+
+  <div class="partner-track">
+
+    <img src="partner1.jpg" alt="Restaurant Partner">
+    <img src="partner2.jpg" alt="Restaurant Partner">
+    <img src="partner3.jpg" alt="Restaurant Partner">
+    <img src="partner4.jpg" alt="Restaurant Partner">
+    <img src="partner5.jpg" alt="Restaurant Partner">
+
+    <!-- 复制一遍实现无限滚动 -->
+    <img src="partner1.jpg" alt="Restaurant Partner">
+    <img src="partner2.jpg" alt="Restaurant Partner">
+    <img src="partner3.jpg" alt="Restaurant Partner">
+    <img src="partner4.jpg" alt="Restaurant Partner">
+    <img src="partner5.jpg" alt="Restaurant Partner">
+
+  </div>
+
+</div>
+
+
+
+
+      
     </section>
 
     <section id="news">
