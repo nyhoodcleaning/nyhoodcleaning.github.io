@@ -55,6 +55,12 @@
   <loc>https://nyhoodcleaning.github.io/news.html</loc>
   <priority>0.7</priority>
 </url>
+
+<url>
+  <loc>https://nyhoodcleaning.github.io/why-clean-hood.html</loc>
+  <priority>0.7</priority>
+</url>
+
   
   
 </urlset>
