@@ -126,5 +126,13 @@
   <url>
   <loc>https://nyhoodcleaning.github.io/en/</loc>
 </url>
+
+  
+ <url>
+  <loc>https://nyhoodcleaning.github.io/en/index.html</loc>
+    <priority>0.2</priority>
+</url>
+
+
   
 </urlset>
